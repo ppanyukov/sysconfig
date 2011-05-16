@@ -34,7 +34,7 @@ set listchars+=precedes:<,extends:>
 set wrap
 
 " No spelling by default as usually result is ugly
-set spell
+set nospell
 
 
 " This makes vim invoke file-based plugins based on extensions?
