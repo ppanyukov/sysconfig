@@ -47,9 +47,9 @@ filetype indent on
 " XML Tag completion, hit CTRL+_ to complete
 " :au Filetype html,xml,xsl source $VIMRUNTIME/../vimfiles/scripts/closetag.vim 
 
-" Background will be dark in terminal.
+" Background will be light in terminal because we set it so.
 " Also set 256 colors, otherwise everything looks
 " pretty bad in 88 in RXVT.
 set t_Co=256
-set background=dark
+set background=light
 
