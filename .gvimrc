@@ -1,9 +1,7 @@
 " This is a customisation file specific for
 " the gvim.
 "
-colorscheme darkblue
-set background=dark
-set guifont=Consolas:h18
-set enc=utf-8
+set guifont=Monospace:h11,Bitstream\ Vera\ Sans\ Mono:h11",\ Consolas:h12
+
 
 
