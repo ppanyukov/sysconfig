@@ -11,8 +11,10 @@ Xft.antialias:              true
 ! This scheme is a nice black background with the white text and scrollbar.
 URxvt*geometry:             120x25
 ! Black letters on slightly off white background
-URxvt*background:           #F1F1F1
-URxvt*foreground:           black
+URxvt*background:           #D9D9D9
+URxvt*foreground:           #050505
+!URxvt*background:           #F1F1F1
+!URxvt*foreground:           black
 !URxvt*inheritPixmap:        true
 !URxvt*reverseVideo:         false
 !URxvt*tintColor:            #dfdfdf
@@ -45,7 +47,8 @@ URxvt*boldItalicFont: xft:Monospace:size=11:bold:italic:autohint=true:antialias=
 !URxvt*italicFont:     xft:Bitstream Vera Sans Mono:size=12:medium:italic:autohint=true:antialias=true
 !URxvt*boldItalicFont: xft:Bitstream Vera Sans Mono:size=12:bold:italic:autohint=true:antialias=true
 
-URxvt*termname:             rxvt-unicode
+!URxvt*termname:             rxvt-unicode
+URxvt*termname:             rxvt-256color
 URxvt*scrollstyle:          rxvt
 URxvt*scrollBar:            true
 URxvt*scrollBar_floating:   false
@@ -59,8 +62,44 @@ URxvt*saveLines:            5500
 !URxvt*tintColor:	        white
 
 ! terminal colors ------------------------------------------------------------
-! Don't do any specific colors, see if the current scheme works
+!
+! Here are the meanings of the colors:
+! color0    (black)     = Black
+! color1    (red)   = Red3
+! color2    (green)     = Green3
+! color3    (yellow)    = Yellow3
+! color4    (blue)  = Blue3
+! color5    (magenta)   = Magenta3
+! color6    (cyan)  = Cyan3
+! color7    (white)     = AntiqueWhite
+! color8    (bright black)  = Grey25
+! color9    (bright red)    = Red
+! color10   (bright green)  = Green
+! color11   (bright yellow)     = Yellow
+! color12   (bright blue)   = Blue
+! color13   (bright magenta)    = Magenta
+! color14   (bright cyan)   = Cyan
+! color15   (bright white)  = White
+! foreground        = Black
+! background        = White 
+!
+! Redefine these to replace colors with other colors.
+!
+! Lighter shade of blue to make directory names look better
+! with the color ls on dark background
+URxvt*color4:DarkBlue
+URxvt*color12:DarkBlue
 
+! Replace very bad bright green used to display executable files
+! with dark green.
+URxvt*color3:DarkGreen
+URxvt*color10:DarkGreen
+
+! Replace bright cyan used to display symbolic links with a
+! better shade.
+URxvt*color14:#0087E0
+!
+! Don't do any specific colors, see if the current scheme works
 ! tangoesque scheme
 !*background: #111111
 !*foreground: #babdb6
