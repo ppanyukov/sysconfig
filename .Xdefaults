@@ -45,7 +45,7 @@ URxvt*boldItalicFont: xft:Monospace:size=11:bold:italic:autohint=true:antialias=
 !URxvt*italicFont:     xft:Bitstream Vera Sans Mono:size=12:medium:italic:autohint=true:antialias=true
 !URxvt*boldItalicFont: xft:Bitstream Vera Sans Mono:size=12:bold:italic:autohint=true:antialias=true
 
-URxvt*termname:             rxvt-unicocde
+URxvt*termname:             rxvt-unicode
 URxvt*scrollstyle:          rxvt
 URxvt*scrollBar:            true
 URxvt*scrollBar_floating:   false
