@@ -1,17 +1,76 @@
+! vim:enc=utf-8:nu:ai:si:et:ts=4:sw=4:ft=xdefaults:
+Xft.antialias:              true
 
-! ---------[ urxvt ] ---------
-URxvt*background: #000040
-URxvt*foreground: #ffffbf
-URxvt*scrollBar:	true
-URxvt*scrollBar_right:	true
-URxvt*font:		xft:Bitstream Vera Sans Mono:size=12:medium:roman:antialias=true
-URxvt*boldFont:		xft:Bitstream Vera Sans Mono:size=12:bold:roman:antialias=true
-URxvt*italicFont:	xft:Bitstream Vera Sans Mono:size=12:medium:italic:autohint=true:antialias=true
-URxvt*boldItalicFont:	xft:Bitstream Vera Sans Mono:size=12:bold:italic:autohint=true:antialias=true
-URxvt*fading:		60
-URxvt*tintColor:	white
-URxvt*shading:		20
-!URxvt*inheritPixmap:	true
-!URxvt*colorBD:		green
-!URxvt*colorIT:		blue
+
+!-------------------------------------------------------------------------------
+!
+!   U R X V T - M L - Setting
+!
+! For normal urxvt, change URxvt-ml* to URxvt*
+!
+! This scheme is a nice black background with the white text and scrollbar.
+URxvt*geometry:             120x25
+URxvt*background:           #000000
+URxvt*foreground:           #ffffff
+URxvt*inheritPixmap:        true
+URxvt*reverseVideo:         false
+URxvt*tintColor:            #dfdfdf
+URxvt*shading:              20      !trans, 0=opaque
+
+! The percentage to fade when not in focus
+URxvt*fading:               50      !term unfocus
+
+URxvt*font:           xft:Monospace:size=12:medium:roman:antialias=true
+URxvt*boldFont:       xft:Monospace:size=12:bold:roman:antialias=true
+URxvt*italicFont:     xft:Monospace:size=12:medium:italic:autohint=true:antialias=true
+URxvt*boldItalicFont: xft:Monospace:size=12:bold:italic:autohint=true:antialias=true
+
+
+! Bitstream veranda font for the systems lacking Monospace
+!URxvt*font:           xft:Bitstream Vera Sans Mono:size=12:medium:roman:antialias=true
+!URxvt*boldFont:       xft:Bitstream Vera Sans Mono:size=12:bold:roman:antialias=true
+!URxvt*italicFont:     xft:Bitstream Vera Sans Mono:size=12:medium:italic:autohint=true:antialias=true
+!URxvt*boldItalicFont: xft:Bitstream Vera Sans Mono:size=12:bold:italic:autohint=true:antialias=true
+
+URxvt*scrollBar:            true
+URxvt*scrollBar_floating:   false
+URxvt*scrollBar_right:      true
+URxvt*scrollColor:          white
+URxvt*saveLines:            5500
+URxvt*termName:             URxvt
+URxvt*cursorColor:          #d8d8d8
+URxvt*colorBD:              lightyellow
+URxvt*colorUL:              yellow
+URxvt*tintColor:	        white
+
+! terminal colors ------------------------------------------------------------
+
+! tangoesque scheme
+*background: #111111
+*foreground: #babdb6
+! Black (not tango) + DarkGrey
+*color0:  #000000
+*color8:  #555753
+! DarkRed + Red
+*color1:  #ff6565
+*color9:  #ff8d8d
+! DarkGreen + Green
+*color2:  #93d44f
+*color10: #c8e7a8
+! DarkYellow + Yellow
+*color3:  #eab93d
+*color11: #ffc123
+! DarkBlue + Blue
+*color4:  #204a87
+*color12: #3465a4
+! DarkMangenta + Mangenta
+*color5:  #ce5c00
+*color13: #f57900
+!DarkCyan + Cyan (both not tango)
+*color6:  #89b6e2
+*color14: #46a4ff
+! LightGrey + White
+*color7:  #cccccc
+*color15: #ffffff
+
 
