@@ -39,7 +39,7 @@ URxvt*boldItalicFont: xft:Monospace:size=11:bold:italic:autohint=true:antialias=
                       xft:Bitstream Vera Sans Mono:size=11:bold:italic:autohint=true:antialias=true, \
                       xft:Consolas:size=11:medium:roman:antialias=true
 
-URxvt.letterSpace: -2
+URxvt.letterSpace: -1
 
 
 
