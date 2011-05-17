@@ -53,7 +53,6 @@ URxvt*scrollBar_right:      true
 URxvt*scrollColor:          grey
 URxvt*borderColor:          pink
 URxvt*saveLines:            5500
-URxvt*termName:             URxvt
 !URxvt*cursorColor:          #d8d8d8
 !URxvt*colorBD:              lightyellow
 !URxvt*colorUL:              yellow
