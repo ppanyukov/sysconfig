@@ -10,20 +10,33 @@ Xft.antialias:              true
 !
 ! This scheme is a nice black background with the white text and scrollbar.
 URxvt*geometry:             120x25
-URxvt*background:           #000000
-URxvt*foreground:           #ffffff
-URxvt*inheritPixmap:        true
-URxvt*reverseVideo:         false
-URxvt*tintColor:            #dfdfdf
+! Black letters on slightly off white background
+URxvt*background:           #F1F1F1
+URxvt*foreground:           black
+!URxvt*inheritPixmap:        true
+!URxvt*reverseVideo:         false
+!URxvt*tintColor:            #dfdfdf
 URxvt*shading:              20      !trans, 0=opaque
 
 ! The percentage to fade when not in focus
 URxvt*fading:               50      !term unfocus
 
-URxvt*font:           xft:Monospace:size=12:medium:roman:antialias=true
-URxvt*boldFont:       xft:Monospace:size=12:bold:roman:antialias=true
-URxvt*italicFont:     xft:Monospace:size=12:medium:italic:autohint=true:antialias=true
-URxvt*boldItalicFont: xft:Monospace:size=12:bold:italic:autohint=true:antialias=true
+URxvt*font:           xft:Monospace:size=11:medium:roman:antialias=true, \
+                      xft:Bitstream Vera Sans Mono:size=11:medium:roman:antialias=true, \
+                      xft:Consolas:size=11:medium:roman:antialias=true
+
+URxvt*boldFont:       xft:Monospace:size=11:bold:roman:antialias=true, \
+                      xft:Bitstream Vera Sans Mono:size=11:bold:roman:antialias=true, \
+                      xft:Consolas:size=11:medium:roman:antialias=true
+
+URxvt*italicFont:     xft:Monospace:size=11:medium:italic:autohint=true:antialias=true, \
+                      xft:Bitstream Vera Sans Mono:size=11:medium:italic:autohint=true:antialias=true, \
+                      xft:Consolas:size=11:medium:roman:antialias=true
+
+URxvt*boldItalicFont: xft:Monospace:size=11:bold:italic:autohint=true:antialias=true, \
+                      xft:Bitstream Vera Sans Mono:size=11:bold:italic:autohint=true:antialias=true, \
+                      xft:Consolas:size=11:medium:roman:antialias=true
+
 
 
 ! Bitstream veranda font for the systems lacking Monospace
@@ -32,45 +45,49 @@ URxvt*boldItalicFont: xft:Monospace:size=12:bold:italic:autohint=true:antialias=
 !URxvt*italicFont:     xft:Bitstream Vera Sans Mono:size=12:medium:italic:autohint=true:antialias=true
 !URxvt*boldItalicFont: xft:Bitstream Vera Sans Mono:size=12:bold:italic:autohint=true:antialias=true
 
+URxvt*termName:             urxvt-unicocde
+URxvt*scrollstyle:          rxvt
 URxvt*scrollBar:            true
 URxvt*scrollBar_floating:   false
 URxvt*scrollBar_right:      true
-URxvt*scrollColor:          white
+URxvt*scrollColor:          grey
+URxvt*borderColor:          pink
 URxvt*saveLines:            5500
 URxvt*termName:             URxvt
-URxvt*cursorColor:          #d8d8d8
-URxvt*colorBD:              lightyellow
-URxvt*colorUL:              yellow
-URxvt*tintColor:	        white
+!URxvt*cursorColor:          #d8d8d8
+!URxvt*colorBD:              lightyellow
+!URxvt*colorUL:              yellow
+!URxvt*tintColor:	        white
 
 ! terminal colors ------------------------------------------------------------
+! Don't do any specific colors, see if the current scheme works
 
 ! tangoesque scheme
-*background: #111111
-*foreground: #babdb6
+!*background: #111111
+!*foreground: #babdb6
 ! Black (not tango) + DarkGrey
-*color0:  #000000
-*color8:  #555753
+!*color0:  #000000
+!*color8:  #555753
 ! DarkRed + Red
-*color1:  #ff6565
-*color9:  #ff8d8d
+!*color1:  #ff6565
+!*color9:  #ff8d8d
 ! DarkGreen + Green
-*color2:  #93d44f
-*color10: #c8e7a8
+!*color2:  #93d44f
+!*color10: #c8e7a8
 ! DarkYellow + Yellow
-*color3:  #eab93d
-*color11: #ffc123
+!*color3:  #eab93d
+!*color11: #ffc123
 ! DarkBlue + Blue
-*color4:  #204a87
-*color12: #3465a4
+!*color4:  #204a87
+!*color12: #3465a4
 ! DarkMangenta + Mangenta
-*color5:  #ce5c00
-*color13: #f57900
+!*color5:  #ce5c00
+!*color13: #f57900
 !DarkCyan + Cyan (both not tango)
-*color6:  #89b6e2
-*color14: #46a4ff
+!*color6:  #89b6e2
+!*color14: #46a4ff
 ! LightGrey + White
-*color7:  #cccccc
-*color15: #ffffff
+!*color7:  #cccccc
+!*color15: #ffffff
 
 
