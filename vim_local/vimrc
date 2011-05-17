@@ -14,8 +14,17 @@
 "  for MS-DOS and Win32:  $VIM\_vimrc
 "	    for OpenVMS:  sys$login:.vimrc
 
-set runtimepath=$HOME/vim_local
+"-------------------------------------------------------------------------------
+" Custom stuff
+"-------------------------------------------------------------------------------
+" Set the runtime paths so that they can be used interchangeabley
+" on both unix and windows. 
+set runtimepath =$HOME/.vim,$HOME/vimfiles
+set runtimepath+=$VIM/vimfiles
 set runtimepath+=$VIMRUNTIME
+set runtimepath+=$VIM/vimfiles/after
+set runtimepath+=$HOME/.vim/after
+set runtimepath+=$HOME/vimfiles/after
 
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
