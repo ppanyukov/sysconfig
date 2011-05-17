@@ -165,3 +165,5 @@ filetype indent on
 
 
 
+"colorscheme zellner
+colorscheme morning
