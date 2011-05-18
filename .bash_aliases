@@ -29,4 +29,5 @@ alias ll='ls -l'                              # long list
 alias la='ls -A'                              # all but . and ..
 alias l='ls -CF'                              #
 
-
+# Aliases to other programs
+alias ack='ack-grep'
