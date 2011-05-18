@@ -176,3 +176,10 @@ colorscheme morning2
 nmap <F12> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
             \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
             \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
+
+
+" When lines wrap, we want the motions <j> and <k> behave like <gj> and <gk>
+" so that we move down the wrapped line rather then jump to the next. This is
+" how most other editors behave when dealing with wrapped lines.
+nnoremap j gj
+nnoremap k gk
