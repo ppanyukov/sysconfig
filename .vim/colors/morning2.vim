@@ -63,7 +63,7 @@ hi lCursor         guibg=Cyan
 hi MatchParen      term=reverse ctermbg=14 guibg=Cyan
 hi Normal          ctermfg=0 ctermbg=7 guifg=Black guibg=grey90
 hi Comment         term=bold cterm=italic ctermfg=DarkGrey gui=italic guifg=grey35
-hi Constant        term=underline ctermfg=1 guifg=Magenta guibg=grey95
+hi Constant        term=underline ctermfg=Green guifg=DarkGreen 
 " Same as Title, seems to work fine for markdown headings like "# Title"
 hi Special         term=bold cterm=bold ctermfg=Blue gui=bold guifg=DarkBlue
 hi Identifier      term=underline cterm=bold ctermfg=0 guifg=DarkCyan
@@ -75,7 +75,7 @@ hi Statement       term=bold cterm=bold ctermfg=0 gui=bold guifg=Black
 " distract from other things.
 hi PreProc         term=underline cterm=bold ctermfg=DarkGrey gui=bold guifg=grey25
 
-hi Type            term=underline ctermfg=0 gui=bold guifg=Black
+hi Type         term=bold ctermfg=Blue guifg=DarkBlue
 hi Underlined      term=underline cterm=underline ctermfg=5 gui=underline guifg=SlateBlue
 hi Ignore          ctermfg=7 guifg=grey90
 hi Error           term=reverse ctermfg=15 ctermbg=9 guifg=White guibg=Red
