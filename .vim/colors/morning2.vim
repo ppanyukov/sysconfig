@@ -62,7 +62,7 @@ hi Cursor          guibg=Black
 hi lCursor         guibg=Cyan
 hi MatchParen      term=reverse ctermbg=14 guibg=Cyan
 hi Normal          ctermfg=0 ctermbg=7 guifg=Black guibg=grey90
-hi Comment         term=bold cterm=italic ctermfg=green gui=italic guifg=Green
+hi Comment         term=bold cterm=italic ctermfg=green gui=italic guifg=DarkGreen
 hi Constant        term=underline ctermfg=1 guifg=Magenta guibg=grey95
 " Same as Title, seems to work fine for markdown headings like "# Title"
 hi Special         term=bold cterm=bold ctermfg=Blue gui=bold guifg=DarkBlue
