@@ -86,6 +86,9 @@ if has("autocmd")
   " For all text files set 'textwidth' to 78 characters.
   autocmd FileType text setlocal textwidth=78
 
+  " Show a vertical line at 80 chars to see easily when line will be long.
+  autocmd FileType text setlocal colorcolumn=80
+
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
   " (happens when dropping a file on gvim).
@@ -135,7 +138,10 @@ set nobackup
 set writebackup
 
 " ignore case in searches
+" but only do so if everything is entered in lowercase
 set ignorecase
+set smartcase
+
 
 " Wrapping etc. These will make some kind of scrolling when nowrap is set
 set linebreak
@@ -183,3 +189,31 @@ nmap <F12> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> tran
 " how most other editors behave when dealing with wrapped lines.
 nnoremap j gj
 nnoremap k gk
+
+" Some useful hacks picked up from http://stevelosh.com/blog/2010/09/coming-home-to-vim/
+
+" Make vim show line numbers relative to the current line.
+" Extremely useful for motions.
+set relativenumber
+
+" Keep undo history even when closing the file.
+" The following will create <FILENAME>.un~ whenever a file is edited.
+" Not used for now but may be useful in the future?
+" set undofile
+" set undodir
+
+" Use perl-like regex in searches without the need to escape every
+" single character like groups etc. See :h \v for more info.
+nnoremap / /\v
+vnoremap / /\v
+
+" Autoformatting options
+" These mean:
+"   - q: Allow formatting of comments with "gq".
+"   - r: Automatically insert the current comment leader after hitting <Enter> in
+"     Insert mode.
+"   - n: Autoindent lists
+"   - 1: Don't break lines after a one-letter word.
+set formatoptions=qrn1
+
+
