@@ -49,11 +49,11 @@ URxvt.letterSpace: -1
 !URxvt*italicFont:     xft:Bitstream Vera Sans Mono:size=12:medium:italic:autohint=true:antialias=true
 !URxvt*boldItalicFont: xft:Bitstream Vera Sans Mono:size=12:bold:italic:autohint=true:antialias=true
 
-URxvt*termname:             rxvt-unicode
+URxvt*termName:             rxvt-unicode
 ! For some reason the rxvt-256color does not display proper colors on one of the
 ! ubuntu boxes, even with ncurses-tem installed and everything. The plain rxvt-unicode
 ! works fine though. Will figure the reason why later, for now reverting to the plain terminal.
-!URxvt*termname:             rxvt-256color
+!URxvt*termName:             rxvt-256color
 URxvt*scrollstyle:          rxvt
 URxvt*scrollBar:            true
 URxvt*scrollBar_floating:   false
