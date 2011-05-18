@@ -68,7 +68,13 @@ hi Constant        term=underline ctermfg=1 guifg=Magenta guibg=grey95
 hi Special         term=bold cterm=bold ctermfg=Blue gui=bold guifg=DarkBlue
 hi Identifier      term=underline cterm=bold ctermfg=0 guifg=DarkCyan
 hi Statement       term=bold cterm=bold ctermfg=0 gui=bold guifg=Black
-hi PreProc         term=underline ctermfg=5 guifg=Purple
+"
+" Not sure what it is but LaTeX macros are linked to this.
+" Instead of having them magenta like in the original, we want them to
+" be bold and not-so-black so that they stand out but do not overwhelm and
+" distract from other things.
+hi PreProc         term=underline cterm=bold ctermfg=DarkGrey gui=bold guifg=grey25
+
 hi Type            term=underline ctermfg=0 gui=bold guifg=Black
 hi Underlined      term=underline cterm=underline ctermfg=5 gui=underline guifg=SlateBlue
 hi Ignore          ctermfg=7 guifg=grey90
