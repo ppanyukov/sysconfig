@@ -166,4 +166,13 @@ filetype indent on
 
 
 "colorscheme zellner
-colorscheme morning
+"colorscheme morning
+colorscheme morning2
+
+
+" A keymap to tell which syntax highlighting group is under cursor.
+" Copied from
+" http://vim.wikia.com/wiki/Identify_the_syntax_highlighting_group_used_at_the_cursor
+nmap <F12> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
+            \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
+            \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
