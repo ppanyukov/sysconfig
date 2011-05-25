@@ -194,7 +194,8 @@ nnoremap k gk
 
 " Make vim show line numbers relative to the current line.
 " Extremely useful for motions.
-set relativenumber
+" This doesn't quite work very well, so disabling.
+" set relativenumber
 
 " Keep undo history even when closing the file.
 " The following will create <FILENAME>.un~ whenever a file is edited.
