@@ -12,5 +12,6 @@ sudo apt-get install \
     texlive-latex-base \
     texlive-xetex \
     context \
-    curl
-
+    curl \
+    maven2 \
+    ant
