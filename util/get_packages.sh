@@ -1,0 +1,16 @@
+# Installs/updates all the useful packages on Ubuntu.
+#
+# You may need to run "sudo apt-get update" before running
+# this to make sure the package info is available locally.
+sudo apt-get install \
+	rxvt-unicode \
+	git \
+	vim \
+	openjdk-6-jdk \
+	clojure \
+    texlive-binaries \
+    texlive-latex-base \
+    texlive-xetex \
+    context \
+    curl
+
