@@ -15,4 +15,5 @@ sudo apt-get install \
     curl \
     maven2 \
     ant \
-    flashplugin-installer
+    flashplugin-installer \
+    chromium-browser
