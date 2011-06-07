@@ -14,4 +14,5 @@ sudo apt-get install \
     context \
     curl \
     maven2 \
-    ant
+    ant \
+    flashplugin-installer
