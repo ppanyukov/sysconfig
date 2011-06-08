@@ -18,4 +18,5 @@ sudo apt-get install \
     ant \
     flashplugin-installer \
     chromium-browser \
-    apt-file
+    apt-file \
+    ncurses-term
