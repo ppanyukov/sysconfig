@@ -3,3 +3,4 @@ projects
 local
 Downloads
 .local/
+*.swp
