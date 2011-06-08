@@ -19,4 +19,5 @@ sudo apt-get install \
     flashplugin-installer \
     chromium-browser \
     apt-file \
-    ncurses-term
+    ncurses-term \
+    clisp
