@@ -20,4 +20,5 @@ sudo apt-get install \
     chromium-browser \
     apt-file \
     ncurses-term \
-    clisp
+    clisp \
+    aptitude
