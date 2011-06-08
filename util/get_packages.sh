@@ -17,4 +17,5 @@ sudo apt-get install \
     maven2 \
     ant \
     flashplugin-installer \
-    chromium-browser
+    chromium-browser \
+    apt-file
