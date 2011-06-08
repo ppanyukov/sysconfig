@@ -6,6 +6,7 @@ sudo apt-get install \
     rxvt-unicode \
     git \
     vim \
+    vim-gnome \
     openjdk-6-jdk \
     clojure \
     texlive-binaries \
