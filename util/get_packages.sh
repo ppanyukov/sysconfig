@@ -21,4 +21,8 @@ sudo apt-get install \
     apt-file \
     ncurses-term \
     clisp \
-    aptitude
+    aptitude \
+    dkms \
+    ia32-libs \
+    libmotif4 \
+    samba
