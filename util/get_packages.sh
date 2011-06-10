@@ -25,4 +25,5 @@ sudo apt-get install \
     dkms \
     ia32-libs \
     libmotif4 \
-    samba
+    samba \
+    compizconfig-settings-manager
