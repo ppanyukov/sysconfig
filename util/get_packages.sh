@@ -23,7 +23,6 @@ sudo apt-get install \
     clisp \
     aptitude \
     dkms \
-    ia32-libs \
     libmotif4 \
     samba \
     compizconfig-settings-manager \
