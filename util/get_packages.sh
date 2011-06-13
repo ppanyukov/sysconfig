@@ -26,4 +26,5 @@ sudo apt-get install \
     ia32-libs \
     libmotif4 \
     samba \
-    compizconfig-settings-manager
+    compizconfig-settings-manager \
+    latex-xcolor
