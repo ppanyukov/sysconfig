@@ -27,4 +27,5 @@ sudo apt-get install \
     samba \
     compizconfig-settings-manager \
     latex-xcolor \
-    txt2tags
+    txt2tags \
+    ocaml-interp
