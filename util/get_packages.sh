@@ -28,4 +28,6 @@ sudo apt-get install \
     compizconfig-settings-manager \
     latex-xcolor \
     txt2tags \
-    ocaml-interp
+    ocaml-interp \
+    rubygems \
+    markdown
