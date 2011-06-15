@@ -26,4 +26,5 @@ sudo apt-get install \
     libmotif4 \
     samba \
     compizconfig-settings-manager \
-    latex-xcolor
+    latex-xcolor \
+    txt2tags
