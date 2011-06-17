@@ -31,3 +31,15 @@ alias l='ls -CF'                              #
 
 # Aliases to other programs
 alias ack='ack-grep'
+
+# Hacks to make life easier
+# From http://www.thegeekstuff.com/2008/10/6-awesome-linux-cd-command-hacks-productivity-tip3-for-geeks/
+# alias ..="cd .."
+# alias ..2="cd ../.."
+# alias ..3="cd ../../.."
+# alias ..4="cd ../../../.."
+# alias ..5="cd ../../../../.."
+
+# mkdir and cd into it in one go
+# function mkdircd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
+

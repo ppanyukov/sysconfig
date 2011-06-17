@@ -217,4 +217,4 @@ vnoremap / /\v
 "   - 1: Don't break lines after a one-letter word.
 set formatoptions=qrn1
 
-
+source ~/.vim/misc/PreviewMarkdown.vim

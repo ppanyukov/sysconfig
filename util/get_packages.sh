@@ -21,4 +21,13 @@ sudo apt-get install \
     apt-file \
     ncurses-term \
     clisp \
-    aptitude
+    aptitude \
+    dkms \
+    libmotif4 \
+    samba \
+    compizconfig-settings-manager \
+    latex-xcolor \
+    txt2tags \
+    ocaml-interp \
+    rubygems \
+    markdown
