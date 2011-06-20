@@ -42,4 +42,8 @@ alias ack='ack-grep'
 
 # mkdir and cd into it in one go
 # function mkdircd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
+#
+
+# Custom alias to run the p4 commands using util/p4x.sh script
+alias p4='~/local/bin/p4x.sh'
 
