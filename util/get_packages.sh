@@ -30,4 +30,8 @@ sudo apt-get install \
     txt2tags \
     ocaml-interp \
     rubygems \
-    markdown
+    markdown \
+    texlive-fonts-recommended \
+    texlive-fonts-extra \
+    plt-scheme \
+    netpbm
