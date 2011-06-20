@@ -12,3 +12,14 @@
     gr = log --graph --full-history --all --color --pretty=tformat:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s%x20%x1b[33m(%an)%x1b[0m"
     checkin = !git checkout | cut -f2 | xargs git add
 
+# Use p4merge as the merge tool
+# Hacked from: https://gist.github.com/1035407
+[merge]
+    keepBackup = false;
+    tool = p4merge
+[mergetool "p4merge"]
+    cmd = p4merge "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
+    keepTemporaries = false
+    trustExitCode = false
+    keepBackup = false
+
