@@ -25,14 +25,12 @@
 if [ $# -eq 1 ]
 then
     \p4
-    return
-fi
-
-if [ "$1" == "interchanges" -o "$1" == "changes" ]
+elif [ "$1" == "interchanges" -o "$1" == "changes" ]
 then
     command=$1
     shift
-    \p4 $command -l "$*" | grep -A2 -e '^Change' | grep -v '^$'
+    # Note: don't quote $*, it doesn't work with p4
+    \p4 $command -l $* | grep -A2 -e '^Change' | grep -v '^$'
 else
     \p4 "$*"
 fi
