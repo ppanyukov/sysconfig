@@ -205,8 +205,8 @@ nnoremap k gk
 
 " Use perl-like regex in searches without the need to escape every
 " single character like groups etc. See :h \v for more info.
-nnoremap / /\v
-vnoremap / /\v
+" nnoremap / /\v
+" vnoremap / /\v
 
 " Autoformatting options
 " These mean:
