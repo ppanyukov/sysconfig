@@ -18,6 +18,10 @@
 #
 # In all other cases we invoke real p4 and pass all arguments as-is.
 #
+# To use this instead of the real p4, add this line to .bashrc:
+#
+# alias p4='<path_to_p4x.sh'
+#
 if [ $# -eq 1 ]
 then
     \p4
