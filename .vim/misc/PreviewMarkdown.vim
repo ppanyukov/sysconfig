@@ -18,6 +18,9 @@
 " http://www.pell.portland.or.us/~orc/Code/discount/
 " http://www.freewisdom.org/projects/python-markdown/
 "
+" MOD, PP June 2011, slight changes to make it work on Ubuntu,
+"                    mainly BROWSER_COMMAND and some other little
+"                    things, less important ones.
 function!PreviewMarkdown()
     " **************************************************************
     " Configurable settings
