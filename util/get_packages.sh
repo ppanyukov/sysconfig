@@ -3,6 +3,7 @@
 # You may need to run "sudo apt-get update" before running
 # this to make sure the package info is available locally.
 sudo apt-get install \
+    ack-grep \
     rxvt-unicode \
     git \
     vim \
