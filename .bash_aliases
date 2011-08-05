@@ -56,3 +56,10 @@ alias type='type -a'    # show all locations for files
 # Custom alias to run the p4 commands using util/p4x.sh script
 alias p4='~/local/bin/p4x.sh'
 
+# Mac OS X aliases for P4V and friends to start from command line
+if [ $OS = "Darwin" ]; then
+    LOCAL_BIN_DIR=~/local/bin
+    alias p4v='open $LOCAL_BIN_DIR/p4v.app'
+    alias p4merge='open $LOCAL_BIN_DIR/p4merge.app'
+    alias p4admin='open $LOCAL_BIN_DIR/p4admin.app'
+fi
