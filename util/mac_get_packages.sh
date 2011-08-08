@@ -12,4 +12,6 @@ sudo port install \
     xorg-server \
     rxvt-unicode \
     libgnome \
-    gnome-terminal
+    gnome-terminal \
+    links \
+    lynx
