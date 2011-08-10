@@ -2,6 +2,7 @@
 projects
 local
 Downloads
+Desktop
 .local/
 *.swp
 scratch/
