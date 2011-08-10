@@ -14,4 +14,11 @@ sudo port install \
     libgnome \
     gnome-terminal \
     links \
-    lynx
+    lynx \
+    lua
+
+# There are some bugs in the mono dependencies, hence
+# they are in the separate install statement(s) here.
+sudo port install libxslt +universal
+sudo port install libgdiplus +universal
+sudo port install mono +universal
