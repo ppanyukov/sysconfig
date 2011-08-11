@@ -15,7 +15,8 @@ sudo port install \
     gnome-terminal \
     links \
     lynx \
-    lua
+    lua \
+    vim
 
 # There are some bugs in the mono dependencies, hence
 # they are in the separate install statement(s) here.
