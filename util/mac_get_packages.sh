@@ -2,7 +2,7 @@
 
 # libgnome is undeclared dependency for gnome-terminal, according to this. It
 # needs to be installed for gnome-terminal to work!
-sudo port install \
+port install \
     curl \
     ncurses \
     git-core \
@@ -20,7 +20,7 @@ sudo port install \
 
 # There are some bugs in the mono dependencies, hence
 # they are in the separate install statement(s) here.
-sudo port install libxslt +universal
-sudo port install libgdiplus +universal
-sudo port install mono +universal
-sudo port install fsharp
+port install libxslt +universal
+port install libgdiplus +universal
+port install mono +universal
+port install fsharp
