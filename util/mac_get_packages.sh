@@ -20,7 +20,12 @@ port install \
 
 # There are some bugs in the mono dependencies, hence
 # they are in the separate install statement(s) here.
-port install libxslt +universal
-port install libgdiplus +universal
-port install mono +universal
-port install fsharp
+#
+# These are commented out as it's better to download
+# and install the mono package which will contain F#
+# in it already.
+#
+# port install libxslt +universal
+# port install libgdiplus +universal
+# port install mono +universal
+# port install fsharp
