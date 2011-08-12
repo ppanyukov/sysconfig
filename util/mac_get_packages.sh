@@ -23,3 +23,4 @@ sudo port install \
 sudo port install libxslt +universal
 sudo port install libgdiplus +universal
 sudo port install mono +universal
+sudo port install fsharp
