@@ -6,3 +6,17 @@ Desktop
 .local/
 *.swp
 scratch/
+Desktop/
+Documents/
+Downloads/
+Library/
+Movies/
+Music/
+Pictures/
+Public/
+Sites/
+VirtualBox VMs/
+.fontconfig/
+.Trash/
+.macports/history
+.links/
