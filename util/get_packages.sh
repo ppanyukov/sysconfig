@@ -2,7 +2,9 @@
 #
 # You may need to run "sudo apt-get update" before running
 # this to make sure the package info is available locally.
-sudo apt-get install \
+#
+# You need to run this with sudo.
+apt-get install \
     ack-grep \
     rxvt-unicode \
     git \
@@ -37,4 +39,9 @@ sudo apt-get install \
     plt-scheme \
     netpbm \
     gimp \
-    emacs
+    emacs \
+    winbind
+
+# Ruby stuff
+gem install jekyll rdiscount --http-proxy $http_proxy
+
