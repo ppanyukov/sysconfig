@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'BollocksTests' target in the 'BollocksTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif
