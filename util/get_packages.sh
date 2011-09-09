@@ -40,7 +40,11 @@ apt-get install \
     netpbm \
     gimp \
     emacs \
-    winbind
+    winbind \
+    mono-devel
+
+# Remote Desktop server, to connect from windows boxes
+apt-get install xrdp
 
 # Ruby stuff
 gem install jekyll rdiscount --http-proxy $http_proxy
