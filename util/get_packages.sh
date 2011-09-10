@@ -2,7 +2,10 @@
 #
 # You may need to run "sudo apt-get update" before running
 # this to make sure the package info is available locally.
-sudo apt-get install \
+#
+# You need to run this with sudo.
+apt-get install \
+    ack-grep \
     rxvt-unicode \
     git \
     vim \
@@ -36,4 +39,14 @@ sudo apt-get install \
     plt-scheme \
     netpbm \
     gimp \
-    ufraw
+    ufraw \
+    emacs \
+    winbind \
+    mono-devel
+
+# Remote Desktop server, to connect from windows boxes
+apt-get install xrdp
+
+# Ruby stuff
+gem install jekyll rdiscount --http-proxy $http_proxy
+

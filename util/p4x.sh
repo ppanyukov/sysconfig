@@ -22,7 +22,7 @@
 #
 # alias p4='<path_to_p4x.sh'
 #
-if [ $# -eq 1 ]
+if [ $# -eq 0 ]
 then
     \p4
 elif [ "$1" == "interchanges" -o "$1" == "changes" ]
@@ -32,6 +32,7 @@ then
     # Note: don't quote $*, it doesn't work with p4
     \p4 $command -l $* | grep -A2 -e '^Change' | grep -v '^$'
 else
-    \p4 "$*"
+    echo "\p4 $*"
+    \p4 $*
 fi
 

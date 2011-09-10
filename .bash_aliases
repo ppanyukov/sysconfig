@@ -1,36 +1,45 @@
 # Aliases
 # #######
 
+# Get the name of OS. Will have:
+# - Linux for Linux (obviously)
+# - Darwin for Mac OS X
+OS=$(uname -s)
+
 # Some example alias instructions
 # If these are enabled they will be used instead of any instructions
 # they may mask.  For example, alias rm='rm -i' will mask the rm
 # application.  To override the alias instruction use a \ before, ie
 # \rm will call the real rm not the alias.
 
-# Interactive operation...
+# Useful ls aliases, a bit different from the Linux because we are on BSD variant
+alias la='ls -A'   # list all entries except for . and ..
+alias ll='ls -l'   # long listing
+
+# Note the color ls command differs on Linux and Mac OS X!
+if [ $OS = "Darwin" ]; then
+    alias ls='ls -GFh' # color output for ls, use '/' for dirs and human-readable sizes
+elif [ $OS = "Linux" ]; then
+    alias ls='ls -hF --color=tty'
+fi
+
+# Safer interactive deletes, copies and moves
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
 # Default to human readable figures
-alias df='df -h'
-alias du='du -h'
+alias df='df -h'   # disk space usage in human-readable form
+alias du='du -h'   # file space usage in human-readable form
 
-# Misc :)
-alias less='less -r'                          # raw control characters
-alias whence='type -a'                        # where, of a sort
-alias grep='grep --color'                     # show differences in colour
-
-# Some shortcuts for different directory listings
-alias ls='ls -hF --color=tty'                 # classify files in colour
-alias dir='ls --color=auto --format=vertical'
-alias vdir='ls --color=auto --format=long'
-alias ll='ls -l'                              # long list
-alias la='ls -A'                              # all but . and ..
-alias l='ls -CF'                              #
+# Grep stuff
+alias grep='grep --color=auto'      # use color in grep
+alias egrep='egrep --color=auto'    # same for egrep
+alias fgrep='fgrep --color=auto'    # same for fgrep
 
 # Aliases to other programs
-alias ack='ack-grep'
+alias ack='ack-grep'    # better than grep, sort of, install separately
+alias type='type -a'    # show all locations for files
 
 # Hacks to make life easier
 # From http://www.thegeekstuff.com/2008/10/6-awesome-linux-cd-command-hacks-productivity-tip3-for-geeks/
@@ -47,3 +56,10 @@ alias ack='ack-grep'
 # Custom alias to run the p4 commands using util/p4x.sh script
 alias p4='~/local/bin/p4x.sh'
 
+# Mac OS X aliases for P4V and friends to start from command line
+if [ $OS = "Darwin" ]; then
+    LOCAL_BIN_DIR=~/local/bin
+    alias p4v='open $LOCAL_BIN_DIR/p4v.app'
+    alias p4merge='open $LOCAL_BIN_DIR/p4merge.app'
+    alias p4admin='open $LOCAL_BIN_DIR/p4admin.app'
+fi

@@ -1,5 +1,7 @@
 ! vim:enc=utf-8:nu:ai:si:et:ts=4:sw=4:ft=xdefaults:
 Xft.antialias:              true
+Xft,hinting: 1
+Xft.hintstyle: hintslight
 
 
 !-------------------------------------------------------------------------------
