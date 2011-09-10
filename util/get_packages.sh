@@ -35,4 +35,5 @@ sudo apt-get install \
     texlive-fonts-extra \
     plt-scheme \
     netpbm \
-    gimp
+    gimp \
+    ufraw
