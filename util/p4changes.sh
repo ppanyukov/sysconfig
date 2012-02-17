@@ -31,14 +31,14 @@ fi
 # Get the submitted changes between
 # specified dates and calculate totals by user
 export revRange
-submits=`p4 changes -s submitted $revRange | cut -f6 -d' ' | cut -f1 -d'@'  | sort | uniq -c | sort -nr`
+submits=`\p4 changes -s submitted $revRange | cut -f6 -d' ' | cut -f1 -d'@'  | sort | uniq -c | sort -nr`
 
 echo Perforce committed changes by user for interval $revRange
 echo "$submits"
 
 # print out the users without commits
 # as they will not be included in the submits
-users=`p4 users | cut -f1 -d' '`
+users=`\p4 users | cut -f1 -d' '`
 for i in $users; do
 	if [[ $submits != *$i* ]]; then
 		printf "%7d %s\n" 0 $i
