@@ -44,8 +44,14 @@ apt-get install \
     winbind \
     mono-devel
 
+# For 'ab' some concurrent HTTP request stuff?
+apt-get install apache2-utils
+
 # Remote Desktop server, to connect from windows boxes
 apt-get install xrdp
+
+# Wireshark networking utility
+apt-get install wireshark
 
 # Ruby stuff
 gem install jekyll rdiscount --http-proxy $http_proxy
