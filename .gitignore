@@ -20,3 +20,10 @@ VirtualBox VMs/
 .Trash/
 .macports/history
 .links/
+.jenkins/
+.ssh/
+.DS_Store
+.android
+.bash_history
+octave-core
+.weinre
