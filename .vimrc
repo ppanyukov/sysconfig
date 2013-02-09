@@ -160,7 +160,7 @@ set nospell
 " Also set 256 colors, otherwise everything looks
 " pretty bad in 88 in RXVT.
 set t_Co=256
-set background=light
+" set background=light
 
 " Always use UTF-8 encodings
 set enc=utf-8
@@ -173,7 +173,7 @@ filetype indent on
 
 "colorscheme zellner
 "colorscheme morning
-colorscheme morning2
+"colorscheme morning2
 
 
 " A keymap to tell which syntax highlighting group is under cursor.
